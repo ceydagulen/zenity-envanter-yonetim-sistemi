@@ -35,16 +35,6 @@ sudo apt install zenity
 
 
 
-
-
-
-
-
-
-
-
-
-
 📌 2. Ana Menü
 Kullanıcı yetkisine bağlı olarak aşağıdaki menü seçenekleri görüntülenir.
 
