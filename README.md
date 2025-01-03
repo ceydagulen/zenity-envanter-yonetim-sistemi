@@ -31,7 +31,8 @@ sudo apt install zenity
 📌 Kullanıcı: Sadece ürünleri listeleyebilir ve rapor alabilir.
 📌Kullanıcının şifreyi doğru girmek için 3 hakkı bulunmaktadır.Eğer şifre 3 defa hatalı girilirse hesap kilitlenir.Kilitli hesabı yönetici hesabı aç kısmından tekrar aktive edebilir.
 
-![Giriş Ekranı](resimler/resim1.png)
+
+
 
 
 
@@ -39,7 +40,7 @@ sudo apt install zenity
 
 📌 2. Ana Menü
 Kullanıcı yetkisine bağlı olarak aşağıdaki menü seçenekleri görüntülenir.
-![Screenshot from 2025-01-03 10-21-33](https://github.com/user-attachments/assets/666e56c4-c1a8-4bc4-99a6-f58a18a50d93)
+
 
 🔹 Ürün Ekle
 🔹 Ürün Listele
@@ -52,7 +53,7 @@ Kullanıcı yetkisine bağlı olarak aşağıdaki menü seçenekleri görüntül
 
 📌 3. Ürün Ekleme
 Ürün bilgilerini girerek envantere yeni bir ürün ekleyebilirsiniz.
-![Screenshot from 2025-01-03 10-22-30](https://github.com/user-attachments/assets/138921b3-1291-4a4f-8bf9-e5188c0a8d38)
+
 
 🔹 Ürün Adı
 🔹 Stok Miktarı
@@ -108,18 +109,10 @@ Bu proje, Bash Scripting ve Zenity GUI entegrasyonu ile geliştirilmiştir.
 ✅ Linux Dağıtımı: Ubuntu, Debian, Arch, Fedora
 ✅ Gereksinimler: Bash, Zenity, CSV işlem desteği
 
-🤝 Katkıda Bulunma
-Bu projeye katkıda bulunmak istiyorsanız:
 
-Bu depoyu fork'layın.
-Kendi dalınızı oluşturun. (git checkout -b yeni-ozellik)
-Değişikliklerinizi commit'leyin. (git commit -m "Yeni özellik eklendi")
-GitHub'a push yapın. (git push origin yeni-ozellik)
-Pull request gönderin!
-💡 Yeni fikirleriniz varsa bizimle paylaşabilirsiniz!
 
-📜 Lisans
-🔹 Bu proje MIT Lisansı ile lisanslanmıştır.
+
+
 📌 Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
 
 📞 İletişim
