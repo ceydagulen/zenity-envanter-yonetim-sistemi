@@ -180,7 +180,8 @@ Bu proje, Bash Scripting ve Zenity GUI entegrasyonu ile geliştirilmiştir.
 
 📌 Projenin nasıl çalıştığını görmek için aşağıdaki bağlantıya tıklayın:
 
-🎥 Demo Videosunu İzle
+🎥 [Demo Videosunu İzle](https://www.youtube.com/watch?v=XXXXXXX)
+
 
 ---
 🛠️ Sistem Gereksinimleri
@@ -193,7 +194,9 @@ Bu proje, Bash Scripting ve Zenity GUI entegrasyonu ile geliştirilmiştir.
 
 
 
-📞 İletişim
-📌 Geliştirici: [ceydagulen]
+
+
 📌 E-posta: [ceyda_glnn_@hotmail.com]
+
+
 📌 GitHub: [github.com/kullaniciadi]
