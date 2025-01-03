@@ -3,7 +3,7 @@
 Bu proje, **Zenity** araçlarını kullanarak geliştirilen kullanıcı dostu bir **Envanter Yönetim Sistemi**dir. **Linux Bash betiği** kullanılarak oluşturulmuş olup, **grafik arayüz** ile kolayca ürün ekleme, güncelleme, silme ve listeleme işlemleri yapılabilir.  
 Ek olarak, **kullanıcı yönetimi**, **stok raporları** ve **hata loglama** gibi ek özellikler içerir.  
 
-![Proje Kapak Görseli](resimler/resim1)
+
 
 ---
 
@@ -31,7 +31,7 @@ sudo apt install zenity
 📌 Kullanıcı: Sadece ürünleri listeleyebilir ve rapor alabilir.
 📌Kullanıcının şifreyi doğru girmek için 3 hakkı bulunmaktadır.Eğer şifre 3 defa hatalı girilirse hesap kilitlenir.Kilitli hesabı yönetici hesabı aç kısmından tekrar aktive edebilir.
 
-  ![Screenshot from 2025-01-03 10-20-44](https://github.com/user-attachments/assets/95d965e3-586a-4ce4-acd0-15a0037010ea)
+  ![Giriş Ekranı](resimler/resim1)
 
 
 
