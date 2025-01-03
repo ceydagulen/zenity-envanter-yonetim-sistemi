@@ -30,7 +30,9 @@ sudo apt install zenity
 📌 Yönetici: Ürün ekleme, güncelleme ve kullanıcı yönetimi yapabilir.
 📌 Kullanıcı: Sadece ürünleri listeleyebilir ve rapor alabilir.
 📌Kullanıcının şifreyi doğru girmek için 3 hakkı bulunmaktadır.Eğer şifre 3 defa hatalı girilirse hesap kilitlenir.Kilitli hesabı sadece yönetici, hesabı aç kısmından tekrar aktive edebilir.
-![Screenshot from 2025-01-03 10-20-44](https://github.com/user-attachments/assets/1741e138-90bd-4edf-92c4-b4399e9b2841)
+<img src="resimler/giris.png" alt="Giriş Ekranı" width="600">
+
+
 
 
 
