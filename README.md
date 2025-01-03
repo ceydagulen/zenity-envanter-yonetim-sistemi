@@ -20,9 +20,9 @@ Ek olarak, **kullanıcı yönetimi**, **stok raporları** ve **hata loglama** gi
 ✔ **Hata Yönetimi** (Hata kayıtları, log dosyası)  
 ✔ **Disk Yönetimi** (Depo yedekleme ve disk alanı kontrolü)  
 
+
+
 ---
-
-
 🎯 Nasıl Kullanılır?
 
 📌 1. Giriş Ekranı:İlk olarak kullanıcı adı ve şifre girerek giriş yapabilirsiniz.
@@ -42,7 +42,7 @@ Ek olarak, **kullanıcı yönetimi**, **stok raporları** ve **hata loglama** gi
 
   
  
-
+---
 
 
 
@@ -74,7 +74,7 @@ Kullanıcı yetkisine bağlı olarak aşağıdaki menü seçenekleri görüntül
 
 
 
-
+---
 
 
 📌 3. Ürün Ekleme
@@ -95,7 +95,7 @@ Kullanıcı yetkisine bağlı olarak aşağıdaki menü seçenekleri görüntül
 
 
 
-
+---
 
 
 📌 4. Ürün Listeleme
@@ -121,7 +121,10 @@ Bir ürünün stok miktarı veya fiyatını değiştirmek için "Ürün Güncell
 
 🔹 Yeni stok veya fiyat bilgisi girilir.
 
-<br><br><br>
+
+
+
+---
 
 📌 6. Ürün Silme
 Ürün silme işlemi için kullanıcıdan onay alınır ve ardından işlem tamamlanır.
@@ -133,6 +136,7 @@ Bir ürünün stok miktarı veya fiyatını değiştirmek için "Ürün Güncell
 ✔ İşlem log.csv dosyasına kaydedilir.
 
 
+---
 📌 7. Rapor Alma
 
 Sistem, stok seviyelerini analiz ederek raporlama sunar.
@@ -144,7 +148,7 @@ Sistem, stok seviyelerini analiz ederek raporlama sunar.
 🔹 En Yüksek Stok Miktarına Sahip Ürünler
 
 
-
+---
 📌 8. Kullanıcı Yönetimi
 
 📌 Yalnızca Yönetici tarafından erişilebilir.
@@ -161,7 +165,7 @@ Sistem, stok seviyelerini analiz ederek raporlama sunar.
 
 ✔ Kullanıcı silme
 
-
+---
 
 ⚙ Geliştirme Süreci
 
@@ -171,14 +175,14 @@ Bu proje, Bash Scripting ve Zenity GUI entegrasyonu ile geliştirilmiştir.
 
 📌 Veri depolama formatı: CSV dosyaları (depo.csv, kullanici.csv, log.csv)
 
-
+---
 🎥 Demo Videosu
 
 📌 Projenin nasıl çalıştığını görmek için aşağıdaki bağlantıya tıklayın:
 
 🎥 Demo Videosunu İzle
 
-
+---
 🛠️ Sistem Gereksinimleri
 
 ✅ Linux Dağıtımı: Ubuntu, Debian, Arch, Fedora
