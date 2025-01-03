@@ -31,7 +31,7 @@ sudo apt install zenity
 📌 Kullanıcı: Sadece ürünleri listeleyebilir ve rapor alabilir.
 📌Kullanıcının şifreyi doğru girmek için 3 hakkı bulunmaktadır.Eğer şifre 3 defa hatalı girilirse hesap kilitlenir.Kilitli hesabı yönetici hesabı aç kısmından tekrar aktive edebilir.
 
-  ![Giriş Ekranı](resimler/resim1.png)
+  ![Giriş Ekranı](zenity-envanter-yonetim-sistemi/resimler/resim1)
 
 
 
