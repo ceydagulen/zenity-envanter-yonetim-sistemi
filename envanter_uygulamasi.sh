@@ -237,20 +237,24 @@ function yeniKullaniciEkle() {
     echo "$KULLANICI_ADI,$HASHLI_SIFRE,$ROL" >> kullanici.csv
     hataKaydi "$KULLANICI" "Yeni kullanıcı eklendi: $KULLANICI_ADI"
     zenity --info --text="Yeni kullanıcı başarıyla eklendi: $KULLANICI_ADI"
-}
-
-function kullanicilariListele() {
-    if [ -s kullanici.csv ]; then
-        cut -d',' -f1,3 kullanici.csv | column -t | zenity --text-info --title="Kullanıcı Listesi" --width=500 --height=400
-    else
-        zenity --error --text="Henüz kayıtlı kullanıcı yok!"
-    fi
+    yedekle
 }
 
 
 
 function kullaniciGuncelle() {
     local KULLANICI=$1
+
+    # Kullanıcının rolünü öğren
+    KULLANICI_ROL=$(grep "^$KULLANICI," kullanici.csv | cut -d',' -f3)
+
+    # Eğer rolü "Yonetici" değilse işlemi engelle
+    if [ "$KULLANICI_ROL" != "Yonetici" ]; then
+        logHata "$KULLANICI" "Yetkisiz İşlem" "Kullanıcı güncelleme yetkisi yok"
+        zenity --error --text="Yetkiniz yok! Kullanıcı güncelleme işlemini yalnızca yöneticiler yapabilir."
+        return
+    fi
+
     local GUNCELLENECEK_KULLANICI=$(zenity --entry --title="Kullanıcı Güncelle" --text="Güncellenecek kullanıcı adını girin:")
 
     if grep -q "^$GUNCELLENECEK_KULLANICI," kullanici.csv; then
@@ -259,19 +263,27 @@ function kullaniciGuncelle() {
         IFS='|' read -r YENI_KULLANICI_ADI YENI_PAROLA YENI_ROL <<< "$FORM"
 
         if [ -z "$YENI_KULLANICI_ADI" ] || [ -z "$YENI_PAROLA" ] || [ -z "$YENI_ROL" ]; then
+            logHata "$KULLANICI" "Eksik Bilgi" "Kullanıcı güncelleme için eksik alan bırakıldı"
             zenity --error --text="Tüm alanları doldurmanız gerekiyor!"
             return
         fi
 
         HASHLI_SIFRE=$(echo -n "$YENI_PAROLA" | md5sum | awk '{print $1}')
+        
+        # Güncelleme işlemi
         sed -i "s/^$GUNCELLENECEK_KULLANICI,.*/$YENI_KULLANICI_ADI,$HASHLI_SIFRE,$YENI_ROL/" kullanici.csv
-        hataKaydi "$KULLANICI" "$GUNCELLENECEK_KULLANICI güncellendi"
+
+        # Log kaydı ekle
+        logIslem "$KULLANICI" "Kullanıcı Güncelleme" "$GUNCELLENECEK_KULLANICI" "$GUNCELLENECEK_KULLANICI" "$YENI_KULLANICI_ADI, $HASHLI_SIFRE, $YENI_ROL"
+
         zenity --info --text="Kullanıcı başarıyla güncellendi: $YENI_KULLANICI_ADI"
     else
-        hataKaydi "$KULLANICI" "$GUNCELLENECEK_KULLANICI bulunamadı"
+        logHata "$KULLANICI" "Kullanıcı Bulunamadı" "Güncellenmek istenen kullanıcı bulunamadı: $GUNCELLENECEK_KULLANICI"
         zenity --error --text="Kullanıcı bulunamadı!"
     fi
 }
+
+
 
 function kullaniciSil() {
 
@@ -493,6 +505,7 @@ function urunEkle() {
     # Ürün bilgilerini dosyaya ekleme
     echo "$ID,$AD,$STOK,$FIYAT,$KATEGORI" >> depo.csv
     zenity --info --text="Ürün Başarıyla Eklendi!"
+    yedekle
 }
 
 
@@ -502,6 +515,7 @@ function urunListele() {
 
 
     cat depo.csv | zenity --text-info --title="Ürün Listesi"
+    
 }
 
 function urunGuncelle() {
@@ -531,9 +545,9 @@ function urunGuncelle() {
     else
         zenity --error --text="Ürün Bulunamadı!"
     fi
+    yedekle
 }
-
-
+    
 
 function urunSil() {
     local KULLANICI=$1
@@ -551,6 +565,7 @@ function urunSil() {
         hataKaydi "$KULLANICI" "Ürün Bulunamadı"
         zenity --error --text="Ürün Bulunamadı!"
     fi
+    yedekle
 }
 
 #  Çıkış Fonksiyonu
@@ -562,11 +577,18 @@ function cikis() {
     fi
 }
 
+function yedekle() {
+    cp kullanici.csv yedek_kullanicilar.csv
+    cp depo.csv yedek_urunler.csv
+}
+
+
+
+
 # Script Başlangıcı
 dosyaKontrol
 giris
 menuGenel
 programYonetimi
 kullaniciYonetimi
-
 
