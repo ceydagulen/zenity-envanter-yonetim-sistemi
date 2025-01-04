@@ -216,11 +216,14 @@ Sistem yönetimiyle ilgili işlemler burada gerçekleştirilir
 
  <img src="resimler/yedek.png" alt="program yönetimi" width="228" height="178">
  
+ 
 2️ Zenity penceresi açıldığında yedeğin kaydedileceği dizini seçin.
+
 3️ Seçilen dizinde backup_YYYYMMDDHHMMSS.tar.gz dosyası oluşturulur.
+
 4️ Başarılı yedekleme sonrası Zenity bilgi mesajı gösterir.
 
- Kullanıcı,sisteme ilk giriş yaptığında diske yedek alma işlemini yaparsa bundan sonra yapacağı her işlemde bilgiler kayıt altına alınır.Aşağıda dosyaların ve içeriklerinin açıklaması verilmiştir.
+   Kullanıcı,sisteme ilk giriş yaptığında diske yedek alma işlemini yaparsa bundan sonra yapacağı her işlemde bilgiler kayıt altına alınır.Aşağıda       dosyaların ve içeriklerinin açıklaması verilmiştir.
 
     📂 depo.csv → Ürün bilgileri
     📂 kullanici.csv → Kullanıcı bilgileri
@@ -239,11 +242,11 @@ Yedekleme fonksiyonu, kullanıcının seçtiği bir dizine yedek dosyasını olu
 <img src="resimler/hatakayit.png" alt="program yönetimi" width="228" height="178">
 
 
-    Geçersiz stok veya fiyat girişleri
-    Aynı isimde ve aynı kategoride ürün ekleme hataları
-    Yetkisiz kullanıcı işlemleri
-    Eksik veya yanlış veri girişleri
-    Sistem çökmesi veya beklenmedik kapanmalar
+  Geçersiz stok veya fiyat girişleri
+  Aynı isimde ve aynı kategoride ürün ekleme hataları
+  Yetkisiz kullanıcı işlemleri
+  Eksik veya yanlış veri girişleri
+  Sistem çökmesi veya beklenmedik kapanmalar
 
 
     
