@@ -159,7 +159,7 @@ Bir ürünün stok miktarı veya fiyatını değiştirmek için "Ürün Güncell
 
  🔹Silinen ürünlerin bilgileri hata_kaydi.csv dosyasına kaydedilir.
  
- 🔹Yanlışlıkla silinen ürünler yedek_urunler.csv dosyasından manuel olarak geri alınabilir
+ 
 
 ---
 **7. Rapor Alma**
@@ -191,7 +191,7 @@ Sistem, stok seviyelerini analiz ederek raporlama sunar.
 🔹Şifre yönetimi ve kullanıcı rollerinin düzenlenmesi mümkündür.Ayrıca kullanıcı şifresini çok deneyerek hesabını kilitlemişse yönetici hesap aç 
 kısmından hesabı tekrardan aktive edebilir.
 
- 🔹Yanlışlıkla silinen kullanıcılar yedek_kullanicilar.csv dosyasından geri alınabilir.
+
 
 
 
@@ -212,15 +212,24 @@ Sistem yönetimiyle ilgili işlemler burada gerçekleştirilir
 
  
 
-🔹Diske Yedek Alma : Bu özellik, sistemdeki tüm önemli dosyaları sıkıştırılmış bir .tar.gz yedeği olarak kaydetmenizi sağlar. 
+🔹Diske Yedek Alma : Bu özellik, sistemdeki tüm önemli dosyaları sıkıştırılmış bir .tar.gz yedeği olarak kaydetmenizi sağlar.
 
  <img src="resimler/yedek.png" alt="program yönetimi" width="228" height="178">
+ 
+2️ Zenity penceresi açıldığında yedeğin kaydedileceği dizini seçin.
+3️ Seçilen dizinde backup_YYYYMMDDHHMMSS.tar.gz dosyası oluşturulur.
+4️ Başarılı yedekleme sonrası Zenity bilgi mesajı gösterir.
 
-Yedekleme işlemi aşağıdaki dosyaları içerir:
+ Kullanıcı,sisteme ilk giriş yaptığında diske yedek alma işlemini yaparsa bundan sonra yapacağı her işlemde bilgiler kayıt altına alınır.Aşağıda dosyaların ve içeriklerinin açıklaması verilmiştir.
 
     📂 depo.csv → Ürün bilgileri
     📂 kullanici.csv → Kullanıcı bilgileri
     📂 log.csv → Sistem logları
+
+
+
+
+
 
 Yedekleme fonksiyonu, kullanıcının seçtiği bir dizine yedek dosyasını oluşturur.
 
@@ -236,7 +245,7 @@ Yedekleme fonksiyonu, kullanıcının seçtiği bir dizine yedek dosyasını olu
     Eksik veya yanlış veri girişleri
     Sistem çökmesi veya beklenmedik kapanmalar
 
- Bu kayıtlar log.csv dosyasında saklanır.
+
     
 
 
@@ -272,7 +281,7 @@ Bu proje, Bash Scripting ve Zenity GUI entegrasyonu ile geliştirilmiştir.
 
 
 
-📌 E-posta: [ceyda_glnn_@hotmail.com]
 
 
-📌 GitHub: [github.com/kullaniciadi]
+
+
