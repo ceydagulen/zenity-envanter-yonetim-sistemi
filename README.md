@@ -243,9 +243,13 @@ Yedekleme fonksiyonu, kullanıcının seçtiği bir dizine yedek dosyasını olu
 
 
   Geçersiz stok veya fiyat girişleri
+  
   Aynı isimde ve aynı kategoride ürün ekleme hataları
+  
   Yetkisiz kullanıcı işlemleri
+  
   Eksik veya yanlış veri girişleri
+  
   Sistem çökmesi veya beklenmedik kapanmalar
 
 
