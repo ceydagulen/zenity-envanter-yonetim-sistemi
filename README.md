@@ -4,7 +4,7 @@ Bu proje, Zenity ve Bash kullanılarak geliştirilen kullanıcı dostu bir Envan
 
 Ek olarak, sistem kullanıcı yönetimi, stok raporlama, hata loglama ve otomatik yedekleme gibi ek özellikler sunmaktadır.
 
-📌 Özellikler
+📌 **Özellikler**
 
   Grafik Arayüz: Zenity kullanarak sezgisel kullanıcı deneyimi
 
@@ -21,7 +21,7 @@ Ek olarak, sistem kullanıcı yönetimi, stok raporlama, hata loglama ve otomati
  
 
 
-📌 Kullanılan Teknolojiler
+📌 **Kullanılan Teknolojiler**
 
 Programlama Dili: Bash
 
@@ -36,7 +36,7 @@ Temel Komutlar: awk, grep, chmod, df, touch, cp, mv,tar
 
 
 
-📌 Sistem Gereksinimleri
+📌 **Sistem Gereksinimleri**
 
  İşletim Sistemi: Linux (Ubuntu önerilir)
  
