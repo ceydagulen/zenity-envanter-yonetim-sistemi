@@ -183,12 +183,13 @@ Sistem, stok seviyelerini analiz ederek raporlama sunar.
 
  Yalnızca Yönetici tarafından erişilebilir.
 
-<img src="resimler/kullanıcı.png" alt="Giriş Ekranı 1" width="228" height="178">
+<img src="resimler/kullanici.png" alt="Giriş Ekranı 1" width="228" height="178">
 
 
-🔹Yeni kullanıcı ekleme, mevcut kullanıcıları listeleme, güncelleme ve silme işlemleri yapılabilir.
+🔹Yeni kullanıcı ekleme, mevcut kullanıcıları listeleme, güncelleme, silme işlemleri  ve kilitli olan hesabı açma işlemleri yapılabilir.
 
-🔹Şifre yönetimi ve kullanıcı rollerinin düzenlenmesi mümkündür.
+🔹Şifre yönetimi ve kullanıcı rollerinin düzenlenmesi mümkündür.Ayrıca kullanıcı şifresini çok deneyerek hesabını kilitlemişse yönetici hesap aç 
+kısmından hesabı tekrardan aktive edebilir.
 
  🔹Yanlışlıkla silinen kullanıcılar yedek_kullanicilar.csv dosyasından geri alınabilir.
 
