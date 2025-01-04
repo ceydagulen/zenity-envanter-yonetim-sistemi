@@ -1,7 +1,24 @@
 # Zenity ile Basit Envanter Yönetim Sistemi
 
-Bu proje, **Zenity** araçlarını kullanarak geliştirilen kullanıcı dostu bir **Envanter Yönetim Sistemi**dir. **Linux Bash betiği** kullanılarak oluşturulmuş olup, **grafik arayüz** ile kolayca ürün ekleme, güncelleme, silme ve listeleme işlemleri yapılabilir.  
-Ek olarak, **kullanıcı yönetimi**, **stok raporları** ve **hata loglama** gibi ek özellikler içerir.  
+📌 Özellikler
+✔ Grafik Arayüz: Zenity kullanarak sezgisel kullanıcı deneyimi
+✔ Ürün Yönetimi: Ürün ekleme, güncelleme ve silme işlemleri
+✔ Stok Takibi: Mevcut ürünleri görüntüleme ve raporlama
+✔ Kullanıcı Yönetimi: Yetkilendirme ve giriş kontrolü
+✔ Hata Loglama: Hataların ve işlem kayıtlarının tutulması
+✔ Otomatik Yedekleme: Veriler .tar.gz formatında sıkıştırılarak saklanır
+
+📌 Kullanılan Teknolojiler
+✔Programlama Dili: Bash
+✔Grafik Arayüz: Zenity
+✔Veri Depolama: CSV dosyaları (depo.csv, kullanici.csv, log.csv)
+✔Yedekleme Formatı: .tar.gz sıkıştırılmış arşivler (backup_YYYYMMDD.tar.gz)
+✔Temel Komutlar: awk, grep, chmod, df, touch, cp, mv,tar
+
+📌 Sistem Gereksinimleri
+ ✔İşletim Sistemi: Linux (Ubuntu önerilir)
+ ✔Bağımlılıklar: Bash, Zenity
+
 
 
 ## 📥  **Kurulum**
@@ -22,14 +39,7 @@ Ek olarak, **kullanıcı yönetimi**, **stok raporları** ve **hata loglama** gi
 
 ---
 
-## **Özellikler**
-✔ **Kullanıcı Rolleri** (Yönetici & Kullanıcı)  
-✔ **Ürün Yönetimi** (Ekleme, Listeleme, Güncelleme, Silme)  
-✔ **Raporlama** (Azalan Stoklar & En Yüksek Stok)  
-✔ **Kullanıcı Yönetimi** (Yeni kullanıcı ekleme, düzenleme ve silme)  
-✔ **Şifre Yönetimi** (Şifre sıfırlama ve hesap kilitleme)  
-✔ **Hata Yönetimi** (Hata kayıtları, log dosyası)  
-✔ **Disk Yönetimi** (Depo yedekleme ve disk alanı kontrolü)  
+
 
 
 
@@ -253,34 +263,21 @@ Yedekleme fonksiyonu, kullanıcının seçtiği bir dizine yedek dosyasını olu
   🔹Sistem çökmesi veya beklenmedik kapanmalar durumunda hatalar kayıt altına alınır.
 
 
-    
+---
 
+**10.Takvim Göster**
 
+Bu kısım envanter yönetim sisteminde tarihler önemli olduğu için yaratıcılık kısmı için eklenmiştir.Kullanıcı ürün eklemek,kullanıcı eklemek ya da rapor alma tarihlerine bakmak için takvime bakabilir.
 
+<img src="resimler/takvim.png" alt="program yönetimi" width="228" height="178">
 
 
 
 ---
 
 
-Bu proje, Bash Scripting ve Zenity GUI entegrasyonu ile geliştirilmiştir.
-
-📌 Kullanılan Komutlar: awk, grep, chmod, df, touch, cp, mv
-
-📌 Veri depolama formatı: CSV dosyaları (depo.csv, kullanici.csv, log.csv)
-
----
 
 
-
-
-
----
-🛠️ Sistem Gereksinimleri
-
-✅ Linux Dağıtımı: Ubuntu
-
-✅ Gereksinimler: Bash, Zenity
 
 
 
