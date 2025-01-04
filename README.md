@@ -1,23 +1,46 @@
-# Zenity ile Basit Envanter Yönetim Sistemi
+# **Zenity ile Basit Envanter Yönetim Sistemi**
+
+Bu proje, Zenity ve Bash kullanılarak geliştirilen kullanıcı dostu bir Envanter Yönetim Sistemidir. Grafik arayüzü sayesinde kolayca ürün ekleme, güncelleme, silme ve listeleme işlemleri yapılabilir.
+
+Ek olarak, sistem kullanıcı yönetimi, stok raporlama, hata loglama ve otomatik yedekleme gibi ek özellikler sunmaktadır.
 
 📌 Özellikler
-✔ Grafik Arayüz: Zenity kullanarak sezgisel kullanıcı deneyimi
-✔ Ürün Yönetimi: Ürün ekleme, güncelleme ve silme işlemleri
-✔ Stok Takibi: Mevcut ürünleri görüntüleme ve raporlama
-✔ Kullanıcı Yönetimi: Yetkilendirme ve giriş kontrolü
-✔ Hata Loglama: Hataların ve işlem kayıtlarının tutulması
-✔ Otomatik Yedekleme: Veriler .tar.gz formatında sıkıştırılarak saklanır
+
+  Grafik Arayüz: Zenity kullanarak sezgisel kullanıcı deneyimi
+
+ Ürün Yönetimi: Ürün ekleme, güncelleme ve silme işlemleri
+
+ Stok Takibi: Mevcut ürünleri görüntüleme ve raporlama
+
+ Kullanıcı Yönetimi: Yetkilendirme ve giriş kontrolü
+
+ Hata Loglama: Hataların ve işlem kayıtlarının tutulması
+
+ Otomatik Yedekleme: Veriler .tar.gz formatında sıkıştırılarak saklanır
+
+ 
+
 
 📌 Kullanılan Teknolojiler
-✔Programlama Dili: Bash
-✔Grafik Arayüz: Zenity
-✔Veri Depolama: CSV dosyaları (depo.csv, kullanici.csv, log.csv)
-✔Yedekleme Formatı: .tar.gz sıkıştırılmış arşivler (backup_YYYYMMDD.tar.gz)
-✔Temel Komutlar: awk, grep, chmod, df, touch, cp, mv,tar
+
+Programlama Dili: Bash
+
+Grafik Arayüz: Zenity
+
+Veri Depolama: CSV dosyaları (depo.csv, kullanici.csv, log.csv)
+
+Yedekleme Formatı: .tar.gz sıkıştırılmış arşivler (backup_YYYYMMDD.tar.gz)
+
+Temel Komutlar: awk, grep, chmod, df, touch, cp, mv,tar
+
+
+
 
 📌 Sistem Gereksinimleri
- ✔İşletim Sistemi: Linux (Ubuntu önerilir)
- ✔Bağımlılıklar: Bash, Zenity
+
+ İşletim Sistemi: Linux (Ubuntu önerilir)
+ 
+ Bağımlılıklar: Bash, Zenity
 
 
 
