@@ -4,6 +4,11 @@ Bu proje, Zenity ve Bash kullanılarak geliştirilen kullanıcı dostu bir Envan
 
 Ek olarak, sistem kullanıcı yönetimi, stok raporlama, hata loglama ve otomatik yedekleme gibi ek özellikler sunmaktadır.
 
+
+**Tanıtım Videosu** : https://www.youtube.com/watch?v=1NJlFgJ7CVE
+ 
+
+
 📌 **Özellikler**
 
   Grafik Arayüz: Zenity kullanarak sezgisel kullanıcı deneyimi
@@ -56,11 +61,8 @@ Temel Komutlar: awk, grep, chmod, df, touch, cp, mv,tar
 
 
 
- ## Tanıtım Videosu  
-[![Tanıtım Videosu](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)  
 
 
----
 
 
 
